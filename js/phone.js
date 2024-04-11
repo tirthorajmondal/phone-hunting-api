@@ -55,12 +55,12 @@ function handleSearch() {
 }
 
 
-// handle search button 2
-const handleSearch2 = () => {
-    toggleLoadingSpinner(true);
-    const searchFieldValue = document.getElementById('search-field2').value;
-    loadPhone(searchFieldValue);
-}
+// // handle search button 2
+// const handleSearch2 = () => {
+//     toggleLoadingSpinner(true);
+//     const searchFieldValue = document.getElementById('search-field2').value;
+//     loadPhone(searchFieldValue);
+// }
 
 
 const toggleLoadingSpinner = (isLoading) => {
@@ -70,5 +70,12 @@ const toggleLoadingSpinner = (isLoading) => {
     }
     else{
         loadingSpinner.classList.add('hidden');
+    }
+}
+
+// handle show all
+const handleShowAll = (isShowAll) => {
+    if(isShowAll){
+        loadPhone()
     }
 }
