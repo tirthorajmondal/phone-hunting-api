@@ -28,7 +28,6 @@ const displayPhones = (phones, isShowAll) => {
     // slice first 12 phones if not show all
     if (!isShowAll) {
         phones = phones.slice(0, 12);
-
     }
 
     phones.forEach(phone => {
@@ -55,13 +54,11 @@ const displayPhones = (phones, isShowAll) => {
 }
 
 // handle search button
-
 function handleSearch(isShowAll) {
     toggleLoadingSpinner(true);
     const searchInput = document.getElementById('search').value;
     loadPhone(searchInput, isShowAll);
 }
-
 
 const toggleLoadingSpinner = (isLoading) => {
     const loadingSpinner = document.getElementById('spinner');
@@ -100,7 +97,6 @@ const showPhoneDetails = (phone) => {
     <p><span>Storage: </span> ${phone.image}</p>
     <p></p>
     `;
-
     // show modal
     show_detail_modal.showModal()
 }
