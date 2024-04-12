@@ -44,6 +44,44 @@
                 <button onclick="handleShowAll()" class="btn btn-secondary active">Show All</button>
             </div>
         </section>
+
+        <!-- <section>
+            <div id="single-phone-data" class="w-1/2 mx-auto hidden p-4">
+                <figure class="px-10 pt-10">
+                    <img src="${phone.image}" alt="Phone" class="rounded-xl" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">${phone.phone_name}</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod voluptate saepe dignissimos!</p>
+                    <p>Storage : ${}</p>
+                    <p>Display Size : ${}</p>
+                    <p>Chipset : ${}</p>
+                    <p>Memory : ${}</p>
+
+                    <div class="card-actions flex justify-end">
+                        <button class="btn btn-primary">Close</button>
+                    </div>
+                </div>
+        </section> -->
+
+
+
+        <!-- Show modal-->
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="show_detail_modal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 id="show-detail-phone-name" class="font-bold text-3xl"></h3>
+                <div id="show-detail-container" class=" mx-auto hidden p-4">
+
+                </div>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
     </main>
     <footer>
 
