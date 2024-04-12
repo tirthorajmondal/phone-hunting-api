@@ -90,12 +90,15 @@ const showPhoneDetails = (phone) => {
 
     const showDetailsContainer = document.getElementById('show-detail-container');
     showDetailsContainer.innerHTML = `
-    // <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.!</p>
-    <p><span>Storage: </span> ${phone?.mainFeatures?.storage
-    }</p>
-    <p><span>Storage: </span> ${phone.image}</p>
-    <p><span>Storage: </span> ${phone.image}</p>
-    <p></p>
+    <div class="w-fit mx-auto">
+        <img src="${phone.image}"  alt="">
+     </div>
+     <h3 class="text-xl font-extrabold">${phone?.name}</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit  amet consectetur adipisicing elit.</p>
+    <p><span class="font-bold">Brand: </span> ${phone?.brand}</p>
+    <p><span class="font-bold">Display Size: </span> ${phone?.mainFeatures?.displaySize}</p>
+    <p><span class="font-bold">Memory: </span> ${phone?.mainFeatures?.memory}</p>
+    <p><span class="font-bold">Chipset: </span>${phone?.mainFeatures?.chipSet}</p>
     `;
     // show modal
     show_detail_modal.showModal()
